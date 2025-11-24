@@ -1,9 +1,9 @@
 # Projeto-Final-EFIJOTA
-## Projeto final no curso de python na OC3
+## Para criar o ambiente virtual
 ```bash
 -python -m venv .venv
 ```
-## Para criar o ambiente virtual
+## Para entrar no ambiente virtual
  _Windows_
  ```bash
 -.venv\Scripts\activate
