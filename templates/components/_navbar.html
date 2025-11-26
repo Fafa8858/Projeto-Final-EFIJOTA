@@ -1,0 +1,16 @@
+<nav class="menu">
+    <a href="{% url 'home' %}">Início</a>
+    <a href="{% url 'produtos' %}">Produtos</a>
+    <a href="{% url 'carrinho' %}">Carrinho</a>
+    <a href="{% url 'contatos' %}">Contatos</a>
+    <a href="{% url 'cupom' %}">cupons</a>
+
+ {% if user.is_authenticated %}
+    <span>Olá, {{ user.username }}</span>
+    <a href="{% url 'logout' %}">Sair</a>
+{% else %}
+    <a href="{% url 'login' %}">Login</a>
+    <a href="{% url 'register' %}">Registrar</a>
+{% endif %}
+
+</nav>

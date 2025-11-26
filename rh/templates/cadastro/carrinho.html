@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Carrinho{% endblock %}
+
+{% block content %}
+    <h1>Carrinho</h1>
+    <p>Para finalizar preencha os campos abaixo.</p>
+
+    <form method="POST" class="col-md-6">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+
+{% endblock %}
